@@ -1,0 +1,18 @@
+
+var plugin_path = '/leaflet/plugins/rares/';
+
+var RareIcon = L.icon({
+    iconUrl:  plugin_path + 'images/RareIcon.png',
+    iconSize: [16, 16] // size of the icon
+});
+
+var RareIconFound = L.icon({
+    iconUrl:  plugin_path + 'images/RareIconRed.png',
+    iconSize: [16, 16] // size of the icon
+});
+
+var rares = {};
+
+function sm(index,zone, coords, popup) {
+    return setMarkerWithWowheadCoordinates(index,zone, coords, popup, RareIcon, popup);
+}

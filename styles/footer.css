@@ -1,0 +1,88 @@
+.footer {
+    height: 400px;
+    margin: -4px;
+    border: none;
+    background-color: black;
+    color: #cbcbcb;
+    display: grid;
+    justify-content: center;
+    grid-gap: 20px;
+
+    
+    font-family: "Ubuntu Condensed" sans-serif;
+}
+.link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer > .banner-image img {
+    filter: brightness(50%);
+    opacity: 0.5;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 15px;
+
+}
+.footer > .hours_twitch {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.footer > .hours_twitch > .twitch {
+    width: 70px;
+}
+.footer > .hours_twitch > .twitch a {
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    width: 10px;
+}
+.footer > .hours_twitch > .twitch a:hover {
+    color: greenyellow;
+    letter-spacing: 2px;
+}
+.footer > .hours_twitch > .hours a {
+    font-family: "Ubuntu Condensed", sans-serif;
+}
+.footer > .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 100px .20px;
+}
+.footer > .socials > .social {
+    width: 70px;
+    height: 80px;
+    margin: 30px 30px -20px 30px;
+    text-align: center;
+
+}
+.footer > .socials > .social a {
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    width: 10px;
+}
+.footer > .socials > .social i {
+    font-size: 2em;
+}
+.footer > .socials > .social a:hover {
+    color: greenyellow;
+    font-size: 1.2em;
+}
+.footer > .trademark {
+    display: flex;
+    justify-content: center;
+    font-size: .5em;
+}
+.footer > .trademark a {
+    color: grey;
+}

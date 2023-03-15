@@ -1,0 +1,36 @@
+/* Spacers */
+.spacer100 {
+    height: 100px;
+    width: 100%;
+}
+.spacer60 {
+    height: 60px;
+    width: 100%;
+}
+.spacer375 {
+    height: 375px;
+    width: 100%;
+}
+.spacer600 {
+    height: 600px;
+    width: 100%;
+}
+.spacer1000 {
+    height: 1000px;
+    width: 100%;
+}
+
+/* Anchor Links */
+.anchor-link {
+    text-decoration: none;
+    
+}
+.anchor-link:focus {
+    outline: none;
+}
+
+.anchor-link h1:after {
+    font-family: "Font Awesome 5 Free";
+    content: " \f0c1";
+    font-weight: 900;
+}

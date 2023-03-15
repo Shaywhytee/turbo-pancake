@@ -1,0 +1,743 @@
+var zonecoords = {};
+
+//Kalimdor
+
+//http://map.testdadesign.samo.ru/zones/1.jpg
+
+zonecoords['141'] = { //Teldrassil
+    coords: [[79.31894, -154.10522],[77.30528, -139.14185]],
+    url: '/zones/1308.jpg',
+    map: 1
+};
+zonecoords['440'] = { //Tanaris
+    coords: [[66.91714, -143.26172],[61.64294, -124.82666]],
+    url: '/zones/1316.jpg',
+    map: 1
+};
+zonecoords['5034'] = { //Uldum
+    coords: [[64.54844, -149.39209],[59.75640, -133.91235]],
+    url: '/zones/1330.jpg',
+    map: 1
+};
+zonecoords['5695'] = { //AhnQirajTheFallenKingdom
+    coords: [[64.54844, -153.23730], [61.49125, -142.92114]],
+    url: '/zones/327.jpg',
+    map: 1
+};
+zonecoords['1377'] = { //Silithus
+    coords: [[66.80922, -150.91919], [64.00005, -140.61401]],
+    url: '/zones/1321.jpg',
+    map: 1
+};
+zonecoords['490'] = { //UngoroCrater
+    coords: [[66.73122, -144.78882], [64.16332, -135.28564]],
+    url: '/zones/1319.jpg',
+    map: 1
+};
+zonecoords['357'] = { //Feralas
+    coords: [[70.06558, -157.06055],[65.73514, -139.68018]],
+    url: '/zones/1314.jpg',
+    map: 1
+};
+zonecoords['361'] = { //Felwood
+    coords: [[76.90320, -147.96387],[74.38443, -132.42920]],
+    url: '/zones/1318.jpg',
+    map: 1
+};
+zonecoords['400'] = { //ThousandNeedles
+    coords: [[68.63255, -142.29492], [65.79377, -131.07788]],
+    url: '/zones/1311.jpg',
+    map: 1
+};
+zonecoords['15'] = { //Dustwallow
+    coords: [[70.37785, -140.97656],[67.16995, -127.65015]],
+    url: '/zones/1315.jpg',
+    map: 1
+};
+zonecoords['1156'] = { //SouthernBarrens
+    coords: [[72.13468, -146.68945], [68.00757, -128.18848]],
+    url: '/zones/1329.jpg',
+    map: 1
+};
+zonecoords['405'] = { //Desolace
+    coords: [[72.39238, -154.21509], [69.91899, -142.44873]],
+    url: '/zones/1313.jpg',
+    map: 1
+};
+zonecoords['215'] = { //Mulgore
+    coords: [[71.88016, -148.97461], [68.81990, -135.02197]],
+    url: '/zones/1306.jpg',
+    map: 1
+};
+zonecoords['17'] = { //Barrens
+    coords: [[73.36249, -143.76709],[70.40735, -129.38599]],
+    url: '/zones/10.jpg',
+    map: 1
+};
+zonecoords['406'] = { //Stonetalon Mountains
+    coords: [[74.49935, -153.23730],[71.62561, -138.36182]],
+    url: '/zones/1312.jpg',
+    map: 1
+};
+zonecoords['14'] = { //Durotar
+    coords: [[73.38136, -138.43872],[70.62720, -124.93652]],
+    url: '/zones/1.jpg',
+    map: 1
+};
+zonecoords['1637'] = { //Orgrimmar
+    coords: [[73.88287, -134.61548],[73.08983, -129.79248]],
+    url: '/zones/85.jpg',
+    map: 1
+};
+zonecoords['331'] = { //Ashenvale
+    coords: [[75.36173, -147.56836],[72.72496, -133.13232]],
+    url: '/zones/1310.jpg',
+    map: 1
+};
+zonecoords['16'] = { //Azshara
+    coords: [[75.79942, -134.90112],[73.32786, -120.90454]],
+    url: '/zones/1317.jpg',
+    map: 1
+};
+zonecoords['616'] = { //Hyjal
+    coords: [[76.27652, -140.97656], [74.50816, -130.24292]],
+    url: '/zones/1328.jpg',
+    map: 1
+};
+zonecoords['148'] = { //Darkshore
+    coords: [[77.47080, -151.01807],[74.83918, -134.41772]],
+    url: '/zones/1309.jpg',
+    map: 1
+};
+zonecoords['493'] = { //Moonglade
+    coords: [[77.60357, -139.80103], [76.75802, -133.98926]],
+    url: '/zones/1320.jpg',
+    map: 1
+};
+zonecoords['618'] = { //Winterspring
+    coords: [[77.75128, -140.65796],[75.39224, -125.33203]],
+    url: '/zones/1322.jpg',
+    map: 1
+};
+zonecoords['3524'] = { //Azuremyst Isle
+    coords: [[76.79321, -161.90552], [75.13232, -151.46851]],
+    url: '/zones/1325.jpg',
+    map: 1
+};
+zonecoords['3525'] = { //Bloodmyst Isle
+    coords: [[77.90877, -162.88330], [76.73788, -154.67651]],
+    url: '/zones/1327.jpg',
+    map: 1
+};
+zonecoords['3557'] = { //Exodar
+    coords: [[76.27912, -159.86206], [75.93356, -157.82959]],
+    url: '/zones/1331.jpg',
+    map: 1
+};
+zonecoords['1638'] = { //Thunder Bluff
+    coords: [[71.35004, -144.50867], [70.77968, -142.02026]],
+    url: '/zones/1323.jpg',
+    map: 1
+};
+zonecoords['3487'] = { //Silvermoon City
+    coords: [[78.88488, 35.73853],[78.52557, 39.17725]],
+    url: '/zones/110.jpg',
+    map: 1
+};
+zonecoords['1537'] = { //Ironforge
+    coords: [[71.12357, 27.07031],[70.64208, 29.00390]],
+    url: '/zones/1265.jpg',
+    map: 1
+};
+zonecoords['4080'] = { //Isle of Quel'Danas
+    coords: [[80.45131, 33.12927],[79.50165, 41.55578]],
+    url: '/zones/1270.jpg',
+    map: 1
+};
+zonecoords['3430'] = { //Eversong Woods
+    coords: [[79.32707, 31.00342],[77.69286, 43.61572]],
+    url: '/zones/1267.jpg',
+    map: 1
+};
+zonecoords['3433'] = { //Ghostlands
+    coords: [[77.96386, 33.00293],[76.74291, 41.48437]],
+    url: '/zones/1268.jpg',
+    map: 1
+};
+zonecoords['3805'] = { //Zul'Aman
+    coords: [[77.44335, 39.22119],[76.95910, 42.58301]],
+    url: '/zones/333.jpg',
+    map: 1
+};
+zonecoords['139'] = { //Eastern Plaguelands
+    coords: [[76.88699, 31.79993],[75.27958, 42.02820]],
+    url: '/zones/1250.jpg',
+    map: 1
+};
+zonecoords['28'] = { //Western Plaguelands
+    coords: [[76.68356, 24.95544],[74.93226, 35.88684]],
+    url: '/zones/1249.jpg',
+    map: 1
+};
+zonecoords['85'] = { //Tirisfal Glades
+    coords: [[76.95785, 18.18786],[75.12243, 29.81689]],
+    url: '/zones/1247.jpg',
+    map: 1
+};
+zonecoords['130'] = { //Silverpine Forest
+    coords: [[75.65043, 17.10571],[73.80032, 27.87231]],
+    url: '/zones/1248.jpg',
+    map: 1
+};
+zonecoords['267'] = { //Hillsbrad Foothills
+    coords: [[75.53971, 21.24206],[73.36717, 33.64563]],
+    url: '/zones/1251.jpg',
+    map: 1
+};
+zonecoords['47'] = { //Hinterlands
+    coords: [[75.54246, 29.99267],[73.85996, 39.79248]],
+    url: '/zones/1252.jpg',
+    map: 1
+};
+zonecoords['45'] = { //Arathi Highlands
+    coords: [[74.48023, 28.85559],[72.85334, 37.72156]],
+    url: '/zones/1244.jpg',
+    map: 1
+};
+zonecoords['4706'] = { //Ruins of Gilneas
+    coords: [[74.20000, 17.28698],[72.73474, 25.22461]],
+    url: '/zones/1273.jpg',
+    map: 1
+};
+zonecoords['5095'] = { //1276 - Tol Barad
+    coords: [[72.99530, 13.72192],[71.98068, 18.84155]],
+    url: '/zones/1276.jpg',
+    map: 1
+};
+zonecoords['5389'] = { //Tol Barad Peninsula
+    coords: [[73.68189, 12.68372],[72.79821, 17.37488]],
+    url: '/zones/1277.jpg',
+    map: 1
+};
+zonecoords['11'] = { //Wetlands
+    coords: [[73.05140, 26.97144],[70.92737, 37.47437]],
+    url: '/zones/1263.jpg',
+    map: 1
+};
+zonecoords['4922'] = { //Twilight Highlands
+    coords: [[73.05464, 32.18994],[70.28912, 45.42847]],
+    url: '/zones/1275.jpg',
+    map: 1
+};
+zonecoords['1'] = { //Dun Morogh
+    coords: [[71.67396, 20.56640],[68.95437, 33.00293]],
+    url: '/zones/1253.jpg',
+    map: 1
+};
+zonecoords['38'] = { //Loch Modan
+    coords: [[71.25493, 30.97595],[69.67615, 38.17199]],
+    url: '/zones/1259.jpg',
+    map: 1
+};
+zonecoords['51'] = { //Searing Gorge
+    coords: [[69.87744, 26.77917],[68.56840, 32.45911]],
+    url: '/zones/1254.jpg',
+    map: 1
+};
+zonecoords['3'] = { //Badlands
+    coords: [[70.10485, 30.79468],[68.29171, 38.61694]],
+    url: '/zones/1245.jpg',
+    map: 1
+};
+zonecoords['46'] = { //Burning Steppes
+    coords: [[69.08616, 27.19665],[67.15074, 35.13977]],
+    url: '/zones/1255.jpg',
+    map: 1
+};
+zonecoords['12'] = { //Elwynn
+    coords: [[68.19600, 22.08252],[65.94642, 30.93750]],
+    url: '/zones/1256.jpg',
+    map: 1
+};
+zonecoords['44'] = { //Redridge Mountains
+    coords: [[67.66356, 29.76745],[65.98448, 36.26587]],
+    url: '/zones/1260.jpg',
+    map: 1
+};
+zonecoords['40'] = { //Westfall
+    coords: [[66.80267, 18.27576],[64.39450, 27.25159]],
+    url: '/zones/1262.jpg',
+    map: 1
+};
+zonecoords['10'] = { //Duskwood
+    coords: [[66.49136, 23.86230],[64.62384, 30.75073]],
+    url: '/zones/1258.jpg',
+    map: 1
+};
+zonecoords['41'] = { //Deadwind Pass
+    coords: [[66.33310, 28.05359],[64.59561, 34.53003]],
+    url: '/zones/1257.jpg',
+    map: 1
+};
+zonecoords['8'] = { //Swamp of Sorrows
+    coords: [[66.66601, 31.27533],[64.96538, 37.69683]],
+    url: '/zones/1261.jpg',
+    map: 1
+};
+zonecoords['4'] = { //Blasted Lands
+    coords: [[65.62875, 28.81165],[62.88761, 38.49060]],
+    url: '/zones/1246.jpg',
+    map: 1
+};
+zonecoords['33'] = { //Northern Stranglethorn
+    coords: [[65.12060, 21.54419],[62.07034, 32.04712]],
+    url: '/zones/50.jpg',
+    map: 1
+};
+zonecoords['5287'] = { //Cape of Stranglethorn
+    coords: [[63.49456, 20.53344],[60.33226, 30.81665]],
+    url: '/zones/210.jpg',
+    map: 1
+};
+zonecoords['1519'] = { //Stormwind City
+    coords: [[68.13065, 21.64307],[66.93866, 26.27930]],
+    url: '/zones/1012.jpg',
+    map: 1
+};
+zonecoords['5145'] = { //Abyssal Depths
+    coords: [[70.88789, 5.17456],[68.53421, 15.42480]],
+    url: '/zones/204.jpg',
+    map: 1
+};
+zonecoords['5144'] = { //Shimmering Expanse
+    coords: [[71.01339, 9.06372],[68.17960, 21.32446]],
+    url: '/zones/205.jpg',
+    map: 1
+};
+zonecoords['4815'] = { //Kelp'thar Forest
+    coords: [[71.63945, 12.99408],[70.04308, 20.30273]],
+    url: '/zones/201.jpg',
+    map: 1
+};
+zonecoords['4720'] = { //Lost Isles
+    coords: [[74.97649, -111.09375], [72.85174, -99.54712]],
+    url: '/zones/174.jpg',
+    map: 1
+};
+zonecoords['4737'] = { //Kezan
+    coords: [[72.57754, -97.78931], [71.85965, -94.33960]],
+    url: '/zones/194.jpg',
+    map: 1
+};
+zonecoords['8064'] = { //The MOTHERLODE!!
+    coords: [[71.07406, -98.11890], [69.88879, -92.83447]],
+    url: '/zones/1010.jpg',
+    map: 1
+};
+zonecoords['5861'] = { //Darkmoon Island
+    coords: [[78.13901, -94.68018], [77.46603, -89.83521]],
+    url: '/zones/407.jpg',
+    map: 1
+};
+zonecoords['5416'] = { //The Maelstrom
+    coords: [[75.33116, -91.61499], [73.36564, -80.39795]],
+    url: '/zones/276.jpg',
+    map: 1
+};
+zonecoords['5042'] = { //Deepholm
+    coords: [[75.34228, -91.40625],[73.36249, -80.38696]],
+    url: '/zones/207.jpg',
+    map: 1
+};
+zonecoords['4710'] = { //Isle of Conquest
+    coords: [[83.66362, -85.95703],[83.15311, -79.22241]],
+    url: '/zones/169.jpg',
+    map: 1
+};
+zonecoords['4742'] = { //Hrothgar's Landing
+    coords: [[84.30545, -72.67456],[83.64905, -63.33618]],
+    url: '/zones/1406.jpg',
+    map: 1
+};
+zonecoords['4384'] = { //Strand of the Ancients
+    coords: [[80.97852, -66.82983],[80.63274, -63.43506]],
+    url: '/zones/128.jpg',
+    map: 1
+};
+zonecoords['3537'] = { //Borean Tundra
+    coords: [[82.61441, -87.30835],[81.25002, -72.69653]],
+    url: '/zones/114.jpg',
+    map: 1
+};
+zonecoords['3711'] = { //Sholazar Basin
+    coords: [[83.34934, -83.15552],[82.44353, -72.11426]],
+    url: '/zones/119.jpg',
+    map: 1
+};
+zonecoords['210'] = { //Icecrown
+    coords: [[83.95212, -79.38721],[82.72792, -63.50098]],
+    url: '/zones/118.jpg',
+    map: 1
+};
+zonecoords['67'] = { //Storm Peaks
+    coords: [[84.15526, -70.23560],[82.79712, -52.20703]],
+    url: '/zones/120.jpg',
+    map: 1
+};
+zonecoords['66'] = { //Zul'Drak
+    coords: [[83.46538, -64.09424],[82.42418, -51.32813]],
+    url: '/zones/121.jpg',
+    map: 1
+};
+zonecoords['394'] = { //Grizzly Hills
+    coords: [[82.80951, -62.74292],[81.61495, -49.42749]],
+    url: '/zones/116.jpg',
+    map: 1
+};
+zonecoords['495'] = { //Howling Fjord
+    coords: [[82.00764, -62.03979],[80.45587, -46.69189]],
+    url: '/zones/117.jpg',
+    map: 1
+};
+zonecoords['65'] = { //Dragonblight
+    coords: [[82.83148, -74.78394],[81.54416, -60.54565]],
+    url: '/zones/115.jpg',
+    map: 1
+};
+zonecoords['4197'] = { //Wintergrasp
+    coords: [[82.87522, -76.53076],[82.22611, -69.02710]],
+    url: '/zones/123.jpg',
+    map: 1
+};
+zonecoords['4395'] = { //Dalaran
+    coords: [[82.98340, -68.07953],[82.88067, -66.53320]],
+    url: '/zones/125.jpg',
+    map: 1
+};
+
+zonecoords['8676'] = { //The Lost Glacier
+    coords: [[84.51622, -76.57471],[84.23416, -72.29004]],
+    url: '/zones/871.jpg',
+    map: 1
+};
+
+zonecoords['5736'] = { //Wandering Isle
+    coords: [[57.17550, -31.20666],[54.66991, -24.42810]],
+    url: '/zones/378.jpg',
+    map: 1
+};
+zonecoords['6757'] = { //Timeless Isle
+    coords: [[50.56303, -55.43701],[47.95218, -49.26269]],
+    url: '/zones/554.jpg',
+    map: 1
+};
+zonecoords['6661'] = { //Isle of Giants
+    coords: [[59.86167, -70.84534],[58.32642, -66.28601]],
+    url: '/zones/507.jpg',
+    map: 1
+};
+zonecoords['6507'] = { //Isle of Thunder
+    coords: [[62.02464, -85.63843],[58.55874, -75.15747]],
+    url: '/zones/504.jpg',
+    map: 1
+};
+zonecoords['5842'] = { //Townlong Steppes
+    coords: [[57.01485, -83.68286],[51.37308, -69.18090]],
+    url: '/zones/388.jpg',
+    map: 1
+};
+zonecoords['6138'] = { //Dread Wastes
+    coords: [[52.44393, -81.37024],[46.57143, -67.71423]],
+    url: '/zones/422.jpg',
+    map: 1
+};
+zonecoords['6134'] = { //Krasarang Wilds
+    coords: [[50.01283, -73.22388],[44.64650, -61.38061]],
+    url: '/zones/418.jpg',
+    map: 1
+};
+zonecoords['5785'] = { //Jade Forest
+    coords: [[55.76240, -69.49402],[48.53168, -51.70715]],
+    url: '/zones/371.jpg',
+    map: 1
+};
+zonecoords['5841'] = { //Kun-Lai Summit
+    coords: [[58.46596, -78.00842],[52.50066, -62.19910]],
+    url: '/zones/379.jpg',
+    map: 1
+};
+zonecoords['5840'] = { //Vale of Eternal Blossoms
+    coords: [[53.26259, -72.02087],[50.62765, -65.63782]],
+    url: '/zones/390.jpg',
+    map: 1
+};
+zonecoords['5805'] = { //Valley of the Four Winds
+    coords: [[51.92838, -72.51526],[47.66739, -62.59461]],
+    url: '/zones/376.jpg',
+    map: 1
+};
+zonecoords['6006'] = { //Veiled Stair
+    coords: [[52.82627, -67.57725],[51.01683, -63.42373]],
+    url: '/zones/433.jpg',
+    map: 1
+};
+zonecoords['6142'] = { //Shrine of Seven Stars
+    coords: [[51.78906, -66.88615],[51.47371, -66.15829]],
+    url: '/zones/393.jpg',
+    map: 1
+};
+zonecoords['6141'] = { //Shrine of Two Moons
+    coords: [[52.94890, -68.39848],[52.65613, -67.76608]],
+    url: '/zones/391.jpg',
+    map: 1
+};
+zonecoords['7543'] = { //Broken Shore
+    coords: [[75.73187, -39.90234],[74.01347, -29.99267]],
+    url: '/zones/1192.jpg',
+    map: 1
+};
+zonecoords['7578'] = { //Eye of Azshara
+    coords: [[74.06936, -42.37976],[72.71678, -35.11780]],
+    url: '/zones/790.jpg',
+    map: 1
+};
+zonecoords['7502'] = { //Dalaran
+    coords: [[75.24186, -39.69601],[74.97649, -37.71366]],
+    url: '/zones/125.jpg',
+    map: 1
+};
+zonecoords['7334'] = { //Azsuna
+    coords: [[76.81448, -52.31140],[74.01495, -35.57922]],
+    url: '/zones/1187.jpg',
+    map: 1
+};
+zonecoords['7558'] = { //Val'sharah
+    coords: [[78.52555, -51.76758],[76.51679, -37.74903]],
+    url: '/zones/1188.jpg',
+    map: 1
+};
+zonecoords['7503'] = { //Highmountain
+    coords: [[79.48460, -46.79146],[77.07875, -29.01421]],
+    url: '/zones/1189.jpg',
+    map: 1
+};
+zonecoords['7541'] = { //Stormheim
+    coords: [[78.62565, -40.09460],[76.52191, -25.42786]],
+    url: '/zones/1190.jpg',
+    map: 1
+};
+zonecoords['7637'] = { //Suramar
+    coords: [[77.72795, -44.29688],[75.54934, -30.08057]],
+    url: '/zones/1191.jpg',
+    map: 1
+};
+zonecoords['9042'] = { //Stormsong Valley
+    coords: [[76.74792, -9.21204],[74.35182, 5.16907]],
+    url: '/zones/1198.jpg',
+    map: 1
+};
+zonecoords['8567'] = { //Tiragarde Sound
+    coords: [[74.97782, -13.41430],[71.37626, 5.41626]],
+    url: '/zones/1196.jpg',
+    map: 1
+};
+zonecoords['8721'] = { //Drustvar
+    coords: [[74.27457, -14.22729],[71.41660, 0.38452]],
+    url: '/zones/1197.jpg',
+    map: 1
+};
+zonecoords['9237'] = { //Tol Dagor
+    coords: [[73.64327, 5.31189],[73.29946, 7.08069]],
+    url: '/zones/1169.jpg',
+    map: 1
+};
+zonecoords['8568'] = { //Boralus
+    coords: [[74.32220, -2.58728],[73.48785, 1.95007]],
+    url: '/zones/1161.jpg',
+    map: 1
+};
+
+zonecoords['10290'] = { //Mechagon
+    coords: [[75.85860, -17.55890],[74.85641, -11.61255]],
+    url: '/zones/1490.jpg',
+    map: 1
+};
+
+zonecoords['8500'] = { //Nazmir
+    coords: [[70.52855, -63.92945],[67.34389, -50.59204]],
+    url: '/zones/1194.jpg',
+    map: 1
+};
+zonecoords['8499'] = { //Zuldazar
+    coords: [[68.63040, -69.65881],[62.76664, -48.20251]],
+    url: '/zones/1181.jpg',
+    map: 1
+};
+zonecoords['8501'] = { //Vol'dun
+    coords: [[71.20542, -72.18017],[67.12272, -54.86572]],
+    url: '/zones/1195.jpg',
+    map: 1
+};
+zonecoords['8670'] = { //Dazar'alor
+    coords: [[67.05033, -60.78186],[65.13677, -53.65173]],
+    url: '/zones/1165.jpg',
+    map: 1
+};
+
+
+zonecoords['10052'] = { //Nazjatar
+    coords: [[75.04468, -76.87134],[73.05144, -65.96191]],
+    url: '/zones/1355.jpg',
+    map: 1
+};
+
+zonecoords['8701'] = { //Mac'Aree
+    coords: [[77.78459, -57.83203],[61.30888, 16.87500]],
+    url: '/zones/882.jpg',
+    map: 4
+};
+zonecoords['8899'] = { //Antoran Wastes
+    coords: [[62.95522, -127.70508],[33.21112, -58.18359]],
+    url: '/zones/885.jpg',
+    map: 4
+};
+zonecoords['8574'] = { //Krokuun
+    coords: [[52.05249, -72.94922],[12.46876, -0.35156]],
+    url: '/zones/830.jpg',
+    map: 4
+};
+zonecoords['3483'] = { //Hellfire Peninsula
+    coords: [[76.29995, -90.21973],[65.21989, -38.27637]],
+    url: '/zones/100.jpg',
+    map: 2
+};
+zonecoords['3521'] = { //Zangarmarsh
+    coords: [[77.37991, -130.60547],[67.32292, -79.45313]],
+    url: '/zones/102.jpg',
+    map: 2
+};
+zonecoords['3519'] = { //Terokkar Forest
+    coords: [[68.98993, -106.21582],[51.23441, -51.19629]],
+    url: '/zones/108.jpg',
+    map: 2
+};
+zonecoords['3518'] = { //Nagrand
+    coords: [[72.48850, -138.91113],[56.94497, -82.61719]],
+    url: '/zones/107.jpg',
+    map: 2
+};
+zonecoords['3522'] = { //Blade's Edge Mountains
+    coords: [[81.92936, -125.55176],[74.40216, -68.59863]],
+    url: '/zones/105.jpg',
+    map: 2
+};
+zonecoords['3523'] = { //Netherstorm
+    coords: [[83.22088, -89.91211],[76.98015, -33.48633]],
+    url: '/zones/109.jpg',
+    map: 2
+};
+zonecoords['3520'] = { //Shadowmoon Valley
+    coords: [[65.21989, -77.03613],[44.57165, -21.57715]],
+    url: '/zones/104.jpg',
+    map: 2
+};
+zonecoords['6720'] = { //Frostfire Ridge
+    coords: [[81.27505, -132.71484],[72.11444, -70.44434]],
+    url: '/zones/525.jpg',
+    map: 3
+};
+zonecoords['6719'] = { //Shadowmoon Valley
+    coords: [[66.72254, -79.40918],[40.97990, -11.20605]],
+    url: '/zones/104.jpg',
+    map: 3
+};
+zonecoords['6721'] = { //Gorgrond
+    coords: [[83.07937, -108.19336],[71.88358, -24.16992]],
+    url: '/zones/1170.jpg',
+    map: 3
+};
+zonecoords['6662'] = { //Talador
+    coords: [[72.81607, -115.53223],[56.07204, -55.01953]],
+    url: '/zones/535.jpg',
+    map: 3
+};
+zonecoords['6722'] = { //Spires of Arak
+    coords: [[60.97311, -103.84277],[34.34344, -42.40723]],
+    url: '/zones/542.jpg',
+    map: 3
+};
+zonecoords['6755'] = { //Nagrand
+    coords: [[74.24781, -150.73242],[59.77852, -93.20801]],
+    url: '/zones/107.jpg',
+    map: 3
+};
+zonecoords['6723'] = { //Tanaan Jungle
+    coords: [[76.81077, -73.69629],[65.73063, -20.34668]],
+    url: '/zones/534.jpg',
+    map: 3
+};
+zonecoords['6941'] = { //Ashran
+    coords: [[75.96290, -29.26758],[69.74855, 2.63672]],
+    url: '/zones/1408.jpg',
+    map: 3
+};
+
+
+
+zonecoords['11462'] = { //Maldraxxus
+    coords: [[83.72035, -57.08496],[76.81077, 7.03125]],
+    url: '/zones/1536.jpg',
+    map: 5
+};
+
+
+zonecoords['11510'] = { //Ardenweald
+    coords: [[57.84475, -96.19629],[22.39071, -23.77441]],
+    url: '/zones/1565.jpg',
+    map: 5
+};
+
+zonecoords['11400'] = { //The Maw
+    coords: [[83.25194, -131.13281],[79.02171, -89.34082]],
+    url: '/zones/1648.jpg',
+    map: 5
+};
+
+zonecoords['10413'] = { //Revendreth
+    coords: [[73.77415, -147.12891],[59.08276, -90.08789]],
+    url: '/zones/1734.jpg',
+    map: 5
+};
+
+zonecoords['10534'] = { //Bastion
+    coords: [[72.34246, -36.51855],[52.34876, 30.76172]],
+    url: '/zones/1734.jpg',
+    map: 5
+};
+
+
+zonecoords['13570'] = { //Korthia
+    coords: [[80.47407, -122.34375],[76.15908, -90.17578]],
+    url: '/zones/1961.jpg',
+    map: 5
+};
+
+
+zonecoords['13536'] = { //Zereth Mortis
+    coords: [[49.30649, 2.98828],[22.67849, 53.08594]],
+    url: '/zones/13536.jpg',
+    map: 5
+};
+
+//
+
+
+
+/*
+ zonecoords[''] = { //
+ coords: ,
+ url: '',
+ map:
+ };
+ */
+

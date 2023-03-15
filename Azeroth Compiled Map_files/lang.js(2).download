@@ -1,0 +1,14 @@
+TEXT_VARS.en.SHOW_RARES = 'Show Rares';
+TEXT_VARS.ru.SHOW_RARES = 'Показать редких существ';
+
+TEXT_VARS.en.HIDE_RARES = 'Hide Rares';
+TEXT_VARS.ru.HIDE_RARES = 'Спрятать редких существ';
+
+
+TEXT_VARS.ru.TEXTERR = 'Не найдено';
+TEXT_VARS.ru.TEXTCANCEL = 'Отмена';
+TEXT_VARS.ru.TEXTPLACEHOLDER = 'Поиск редких существ';
+
+TEXT_VARS.en.TEXTERR = 'Location not found';
+TEXT_VARS.en.TEXTCANCEL = 'Cancel';
+TEXT_VARS.en.TEXTPLACEHOLDER = 'Search Rares';

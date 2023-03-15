@@ -1,0 +1,113 @@
+
+if (Object.keys(rares).length) {
+
+    var rarFmarker = {
+        icon: RareIconFound,
+        circle: false
+    };
+
+    var raresSearch = [];
+    var layerGorupObject = {};
+
+    var overlays = {};
+    for (var rzone in rares) {
+        layerGorupObject[rzone] = new L.LayerGroup();
+        rares[rzone].items.forEach(function(object,index) {
+            if (zonecoords[object.zone].map === _map) {
+                var m = sm(index,object.zone,object.loc,lng(object.title) + ' ('+object.loc[0]+','+object.loc[1]+')');
+                var t = lng(object.title);
+                t = t.replace('&apos;',"'");
+                var rs = {loc: convertFromWoWXYtoLatLng(object.zone,object.loc),title: t + ' ('+object.loc[0]+','+object.loc[1]+')'};
+
+                if (object.depend) {
+                    m.options.depend = {};
+                    m.options.depend = object.depend;
+                    rs.depend = {};
+                    rs.depend = object.depend;
+                }
+
+                m.addTo(layerGorupObject[rzone]);
+                raresSearch.push(rs);
+            }
+        });
+        if (Object.keys(layerGorupObject[rzone]._layers).length) overlays[rares[rzone].title] = layerGorupObject[rzone];
+
+    }
+
+
+
+    if (Object.keys(overlays).length) {
+        L.control.layers(null,overlays).addTo(map);
+        var controlSearch = new L.Control.Search({
+            position: 'topright',
+            sourceData: function(text,callback){
+                callback(raresSearch);
+            },
+            formatData: function(json){
+                //todo  another hidden zones
+                var self = this,
+                    propName = this.options.propertyName,
+                    propLoc = this.options.propertyLoc,
+                    i, jsonret = {};
+
+                if (typeof toggleTimeMachineDeepholm !='undefined') {
+                    if (toggleTimeMachineDeepholm._currentState.stateName != 'show-deepholm') {
+                        return self._defaultFormatData(json);
+                    }
+                }
+
+                for(i in json) {
+                    if (!json[i].depend) {
+                        jsonret[ self._getPath(json[i],propName) ]= L.latLng( json[i][propLoc].lat, json[i][propLoc].lng );
+                    }
+                }
+
+                return jsonret;
+            },
+            initial: false,
+            zoom: 12,
+            marker: rarFmarker,
+            hideMarkerOnCollapse: true,
+            textErr: 	lng('TEXTERR'),
+            textCancel: 	lng('TEXTCANCEL'),
+            textPlaceholder: 	lng('TEXTPLACEHOLDER'),
+        });
+
+        map.addControl( controlSearch );
+    }
+
+    map.on('overlayadd', function(eo) {
+        var mrkk,mrk;
+        //todo  another hidden zones
+        if (eo.name === 'Cataclysm'){
+            if (typeof toggleTimeMachineDeepholm !='undefined') {
+                if (toggleTimeMachineDeepholm._currentState.stateName == 'show-deepholm') {
+                    for ( mrkk in eo.layer._layers) {
+                         mrk = eo.layer._layers[mrkk];
+                        if (mrk.options.depend) {
+                            map.removeLayer(mrk);
+                        }
+                    }
+                }
+                toggleTimeMachineDeepholm.disable();
+            } else {
+                for ( mrkk in eo.layer._layers) {
+                     mrk = eo.layer._layers[mrkk];
+                    if (mrk.options.depend) {
+                        map.removeLayer(mrk);
+                    }
+                }
+            }
+        }
+    });
+
+    map.on('overlayremove', function(eo) {
+        if (eo.name === 'Cataclysm'){
+            if (typeof toggleTimeMachineDeepholm !='undefined') {
+                toggleTimeMachineDeepholm.enable();
+            }
+        }
+    });
+
+
+}

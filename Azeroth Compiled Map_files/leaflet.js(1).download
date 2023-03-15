@@ -1,0 +1,121 @@
+var plugins_button = [];
+
+var pin = L.icon({
+    iconUrl: '/leaflet/pin-yellow.png',
+    iconSize: [11, 11], // size of the icon
+    iconAnchor: [5.5, 5.5], // point of the icon which will correspond to marker's location
+});
+
+var TEXT_VARS = {en:{},ru:{}};
+var _language = document.querySelector("html").getAttribute('lang');
+var _map = parseInt(document.querySelector("html").getAttribute('map'));
+
+function lng(text){
+    if (typeof TEXT_VARS !='undefined' && typeof TEXT_VARS[_language]!='undefined' && TEXT_VARS[_language].hasOwnProperty(text)) {
+        return TEXT_VARS[_language][text];
+    } else {
+        return text;
+    }
+}
+
+function getCenterPoint (topLeftLatLng,bottomRightLatLng) {
+    var p1_topleft = L.Projection.Mercator.project(topLeftLatLng);
+    var p2_bottomright = L.Projection.Mercator.project(bottomRightLatLng);
+    var center = {
+        x: (p1_topleft.x + p2_bottomright.x) / 2,
+        y: (p1_topleft.y + p2_bottomright.y) / 2
+    };
+    return L.Projection.Mercator.unproject(center);
+}
+
+
+function convertFromWoWXYtoLatLng(zone, coords) {
+    var positionTopLeft = new L.LatLng(zonecoords[zone]['coords'][0][0],zonecoords[zone]['coords'][0][1]);
+    var positionBottomRight = new L.LatLng(zonecoords[zone]['coords'][1][0],zonecoords[zone]['coords'][1][1]);
+    var p1 = L.Projection.Mercator.project(positionTopLeft);
+    var p2 = L.Projection.Mercator.project(positionBottomRight);
+
+    var point  = {
+        x: p1.x + (((p2.x - p1.x)  * (coords[0]/100))),
+        y: p1.y + ((p2.y - p1.y)  * (coords[1]/100))
+    };
+    return L.Projection.Mercator.unproject(point);
+}
+
+function convertFromLatLngtoWoWXY(zone, latlng) {
+    //перевели в пикселы
+    var positionTopLeft = new L.LatLng(zonecoords[zone]['coords'][0][0],zonecoords[zone]['coords'][0][1]);
+    var positionBottomRight = new L.LatLng(zonecoords[zone]['coords'][1][0],zonecoords[zone]['coords'][1][1]);
+    var p1 = L.Projection.Mercator.project(positionTopLeft);
+    var p2 = L.Projection.Mercator.project(positionBottomRight);
+    var p3 = L.Projection.Mercator.project(latlng);
+    var x = ((p3.x-p1.x)/ (p2.x - p1.x) * 100);
+    var y = ((p3.y-p1.y)/ (p2.y - p1.y) * 100);
+    return [x,y];
+}
+
+function setMarkerWithWowheadCoordinates(index,zone, coords, popup, icon, title) {
+    var pos =  convertFromWoWXYtoLatLng(zone, coords);
+    if (typeof icon =='undefined') {
+        icon = pin;
+    }
+
+    var options = {icon: icon};
+
+    if (typeof title != 'undefined') {
+        options.title = title;
+    }
+
+    //debug
+    //options.draggable = true;
+
+    var marker = L.marker(pos, options);
+
+    marker.dataIndex = index;
+    if (typeof popup =='undefined') {
+        popup = coords[0] + ', ' + coords[1];
+    }
+    marker.bindPopup(WOWPopup(popup));
+
+    //debug
+    marker.on('drag', function (e) {
+        var position = marker.getLatLng();
+        var wpos = convertFromLatLngtoWoWXY(zone,position);
+        console.log(wpos[0].toFixed(2) + ', ' + wpos[1].toFixed(2));
+    });
+
+
+   /* marker.off('click');
+    marker.on('mouseover', function (e) {
+        this.openPopup();
+    });
+    marker.on('mouseout', function (e) {
+        this.closePopup();
+    });*/
+    return marker;
+}
+
+
+function WOWPopup(content) {
+    return '<div class="wowhead-tooltip"><table class=""><tbody><tr><td>' + content + '</td><th style="background-position: right top;"></th></tr><tr><th style="background-position: left bottom;"></th><th style="background-position: right bottom;"></th></tr></tbody></table></div>';
+}
+
+function getHashValue(key) {
+    var input =  location.hash.replace('#','');
+    var split = '';
+    var searchObject = {};
+    var ret;
+    var queries = input.split('&');
+    for( i = 0; i < queries.length; i++ ) {
+        split = queries[i].split('=');
+        if (typeof split[1] == 'undefined') {
+            split[1] = '';
+        }
+        searchObject[split[0]] = split[1];
+    }
+    if (searchObject.hasOwnProperty(key)) {
+        ret = searchObject[key];
+    }
+
+    return ret;
+}

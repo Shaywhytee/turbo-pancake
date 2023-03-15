@@ -1,0 +1,100 @@
+var plugin_path = '/leaflet/plugins/instances/';
+
+var InstancesBluePin = L.icon({
+    iconUrl:  plugin_path + 'images/instances_dungeon.png',
+    iconSize: [24, 24] // size of the icon
+});
+
+var InstancesGreenPin = L.icon({
+    iconUrl: plugin_path + 'images/instances_raid.png',
+    iconSize: [24, 24] // size of the icon
+});
+
+var InstancesMultiplyPin = L.icon({
+    iconUrl: plugin_path + 'images/instances_multiply.png',
+    iconSize: [24, 24] // size of the icon
+});
+
+
+var InstancesPinkPin = L.icon({
+    iconUrl: plugin_path + 'images/instances_togrhast.png',
+    iconSize: [24, 24] // size of the icon
+});
+
+
+function InstancePopup(name,level,requires) {
+    return '<table style="white-space: nowrap; width: 100%;"><tbody><tr><td><table width="100%"><tbody><tr><td><b>' + name + (requires?requires:'')  +'</b></td><th><b class="q0">'+ lng('LEVEL')+' ' + level +'</b></th></tr></tbody></table></td></tr></tbody></table>';
+}
+
+
+var markers = L.markerClusterGroup({
+    spiderfyOnMaxZoom: false,
+    //spiderfyOnMaxZoom: true, //debug
+    showCoverageOnHover: false,
+    zoomToBoundsOnClick: false,
+    maxClusterRadius: 10,
+    iconCreateFunction: function(cluster) {
+        return InstancesMultiplyPin;
+    }
+});
+
+var InstanceButton = false;
+
+instances.forEach(function(value,index) {
+    if (typeof zonecoords[value.zone] != 'undefined' && zonecoords[value.zone].map === _map) {
+        value.name = '<span class="icon_left icon_'+ value.type +'"></span> ' + value.name;
+        var m = InstancesBluePin;
+        var p = InstancePopup(value.name,value.level,value.requires);
+        if (value.type=='raid')  {
+            m = InstancesGreenPin;
+        }
+
+        if (value.type=='torghast')  {
+            m = InstancesPinkPin;
+        }
+
+        markers.addLayer(setMarkerWithWowheadCoordinates(index,value.zone,value.coords,p,m));
+        InstanceButton = true;
+    }
+});
+
+if (InstanceButton) {
+    markers.on('clusterclick', function (a) {
+        var p = '';
+        a.layer.getAllChildMarkers().forEach(function(marker,index) {
+            var object =  instances[marker.dataIndex];
+            p = p + InstancePopup(object.name,object.level,object.requires);
+        });
+
+        var popupContent = WOWPopup(p);
+        if (a.layer._popup) {
+            a.layer._popup.setContent(popupContent).openPopup();
+        } else {
+            a.layer.bindPopup(popupContent).openPopup();
+        }
+    });
+
+    var toggleInstances = L.easyButton({
+        id: 'instances-button',
+        states: [{
+            stateName: 'show-dungeons',
+            icon: '<span class="dungeon_b"></span>',
+            title: lng('SHOW_DUNGEONS_AND_RAIDS'),
+            onClick: function(callback) {
+                map.addLayer(markers);
+                callback.state('hide-dungeons');
+            }
+        }, {
+            icon: '<span class="dungeon_b pressed"></span>',
+            stateName: 'hide-dungeons',
+            title: lng('HIDE_DUNGEONS_AND_RAIDS'),
+            onClick: function(callback) {
+                map.removeLayer(markers);
+                callback.state('show-dungeons');
+            }
+
+        }],
+    });
+    plugins_button.push(toggleInstances);
+}
+

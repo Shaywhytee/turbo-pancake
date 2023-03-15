@@ -1,0 +1,73 @@
+/* Hero section styles */
+.hero-section {
+    background-image: url(../Images/Background-image.png);
+    padding: 100px;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-section > .top-heading {
+    padding: 1px 20px;
+    background-color: black;
+    color: yellowgreen;
+    width: 330px;
+    border-radius: 2px;
+}
+.hero-section > .bottom-heading {
+    background-color: yellowgreen;
+    color: black;
+    padding: 1px 20px;
+    width: 200px;
+    border-radius: 2px;
+}
+
+/* Features section styles */
+.features-section {
+    height: 400px;
+    background-image: url(../Images/Gray-green_pattern.png);
+    background-color: yellowgreen ;
+    border-top: 10px solid black;
+    color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu Condensed", sans-serif;
+    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 2.45);
+}
+.features-section > .columns-wrapper {
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+}
+.features-section > .columns-wrapper > .column {
+    padding: 40px;
+    margin: 62px;
+    text-align: center;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    transition: 1s;
+    background-color: black;
+    width: auto;
+}
+.features-section > .columns-wrapper > .column:hover {
+    border: 5px solid yellowgreen; 
+}
+.features-section > .columns-wrapper > .column :nth-child(1) {
+    font-size: 3em;
+}
+.features-section > .columns-wrapper > .column :nth-child(2) {
+    font-size: 1.5em;
+    font-weight: 900;
+    height: 50px;
+    transition: 1s;
+    width: 100%;
+}
+.features-section > .columns-wrapper > .column :nth-child(2):hover {
+    letter-spacing: 1px;
+}
+.features-section > .columns-wrapper > .column :nth-child(3) {
+    font-size: .9em;
+}

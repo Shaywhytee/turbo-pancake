@@ -1,0 +1,15 @@
+
+
+
+if (_map!==10) {
+
+var back = [
+    L.easyButton('fa-globe', function(btn, map){
+    location.href = '//' + location.host;
+},lng('BACK_TO_COSMIC'),'back-button')
+];
+L.easyBar(back,{position:'topright'}).addTo(map);
+
+}
+
+

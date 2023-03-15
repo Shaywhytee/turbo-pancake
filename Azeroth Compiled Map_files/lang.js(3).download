@@ -1,0 +1,9 @@
+TEXT_VARS.en.SHOW_TIMEMACHINE = 'Show map areas before Battle for Azeroth';
+TEXT_VARS.en.HIDE_TIMEMACHINE  = 'Hide map areas before Battle for Azeroth';
+TEXT_VARS.ru.SHOW_TIMEMACHINE = 'Показать карту до Battle for Azeroth';
+TEXT_VARS.ru.HIDE_TIMEMACHINE  = 'Спрятать карту до Battle for Azeroth';
+
+TEXT_VARS.en.SHOW_DEEPHOLM = 'Show Deepholm';
+TEXT_VARS.en.HIDE_DEEPHOLM  = 'Hide Deepholm';
+TEXT_VARS.ru.SHOW_DEEPHOLM = 'Показать Подземье';
+TEXT_VARS.ru.HIDE_DEEPHOLM  = 'Спрятать Подземье';

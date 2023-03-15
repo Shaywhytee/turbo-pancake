@@ -1,0 +1,1685 @@
+var instances = [];
+
+instances.push({
+    coords: [54.55, 54.47],
+    zone: 1637,
+    type: 'dungeon',
+    name: lng('RAGEFIRE_CHASM'),
+    description: '',
+    level: '7-30'
+});
+
+
+instances.push({
+    coords: [42.72, 72.88],
+    zone: 40,
+    type: 'dungeon',
+    name: lng('DEADMINES'),
+    description: '',
+    level: '7-30 (35<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+instances.push({
+    coords: [40.2, 67.9],
+    zone: 17,
+    type: 'dungeon',
+    name: lng('WAILING_CAVERNS'),
+    description: '',
+    level: '8-30'
+});
+
+
+instances.push({
+    coords: [43.51, 67.40],
+    zone: 130,
+    type: 'dungeon',
+    name: lng('SHADOWFANG_KEEP'),
+    description: '',
+    level: '8-30 (35<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [42.42, 47.54],
+    zone: 1519,
+    type: 'dungeon',
+    name: lng('THE_STOCKADE'),
+    description: '',
+    level: '10-30',
+    requires: ''
+});
+
+
+instances.push({
+    coords: [13.87, 14.55],
+    zone: 331,
+    type: 'dungeon',
+    name: lng('BLACKFATHOM_DEEPS'),
+    description: '',
+    level: '10-30'
+});
+
+
+instances.push({
+    coords: [30.92, 37.09],
+    zone: 1,
+    type: 'dungeon',
+    name: lng('GNOMEREGAN'),
+    description: '',
+    level: '10-30',
+    requires: ''
+});
+//Gnomeregan
+
+
+instances.push({
+    coords: [85.30, 30.74],
+    zone: 85,
+    type: 'dungeon',
+    name: lng('SCARLET_HALLS'),
+    description: '',
+    level: '10-30 (35<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+instances.push({
+    coords: [85.30, 30.74],
+    zone: 85,
+    type: 'dungeon',
+    name: lng('SCARLET_MONASTERY'),
+    description: '',
+    level: '10-30 (35<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [38.72, 91.95],
+    zone: 1156,
+    type: 'dungeon',
+    name: lng('RAZORFEN_KRAUL'),
+    description: '',
+    level: '10-30'
+});
+
+
+instances.push({
+    coords: [29, 60.3],
+    zone: 405,
+    type: 'dungeon',
+    name: lng('MARAUDON'),
+    description: '',
+    level: '10-30'
+});
+
+
+instances.push({
+    coords: [49.6, 25.0],
+    zone: 400,
+    type: 'dungeon',
+    name: lng('RAZORFEN_DOWNS'),
+    description: '',
+    level: '15-30'
+});
+
+
+instances.push({
+    coords: [61.95, 30.34],
+    zone: 357,
+    type: 'dungeon',
+    name: lng('DIRE_MAUL'),
+    description: '',
+    level: '15-30'
+});
+
+
+instances.push({
+    coords: [70.55, 70.51],
+    zone: 28,
+    type: 'dungeon',
+    name: lng('SCHOLOMANCE'),
+    description: '',
+    level: '15-30 (35<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [42.28, 11.40],
+    zone: 3,
+    type: 'dungeon',
+    name: lng('ULDAMAN'),
+    description: '',
+    level: '15-30',
+    requires: ''
+});
+
+
+instances.push({
+    coords: [27.07, 10.18],
+    zone: 139,
+    type: 'dungeon',
+    name: lng('STRATHOLME_SCARLET_PART'),
+    description: '',
+    level: '20-30',
+    requires: ''
+});
+
+instances.push({
+    coords: [43.39, 19.38],
+    zone: 139,
+    type: 'dungeon',
+    name: lng('STRATHOLME_UNDEAD_PART'),
+    description: '',
+    level: '20-30',
+    requires: ''
+});
+
+instances.push({
+    coords: [39.76, 21.25],
+    zone: 440,
+    type: 'dungeon',
+    name: lng('ZULFARRAK'),
+    description: '',
+    level: '15-30'
+});
+
+instances.push({
+    coords: [21.02, 35.66],
+    zone: 46,
+    type: 'dungeon',
+    name: lng('BLACKROCK_DEPTHS'),
+    description: '',
+    level: '20-30',
+    requires: ''
+});
+
+instances.push({
+    coords: [69.55, 53.71],
+    zone: 8,
+    type: 'dungeon',
+    name: lng('SUNKEN_TEMPLE'),
+    description: '',
+    level: '20-30',
+    requires: ''
+});
+
+
+instances.push({
+    coords: [21.02, 35.66],
+    zone: 46,
+    type: 'dungeon',
+    name: lng('LOWER_BLACKROCK_SPIRE'),
+    description: '',
+    level: '20-30',
+    requires: ''
+});
+
+
+instances.push({
+    coords: [36.14, 93.50],
+    zone: 1377,
+    type: 'raid',
+    name: lng('RUINS_OF_AHNQIRAJ'),
+    description: '',
+    level: '30 (10 ' + lng('PLAYER') + ')'
+});
+
+instances.push({
+    coords: [21.02, 35.66],
+    zone: 46,
+    type: 'raid',
+    name: lng('MOLTEN_CORE'),
+    description: '',
+    level: '30 (40 ' + lng('PLAYER') + ')',
+    requires: ''
+});
+
+instances.push({
+    coords: [21.02, 35.66],
+    zone: 46,
+    type: 'raid',
+    name: lng('BLACKWING_LAIR'),
+    description: '',
+    level: '30 (40 ' + lng('PLAYER') + ')',
+    requires: ''
+});
+
+
+instances.push({
+    coords: [23.88, 84.07],
+    zone: 1377,
+    type: 'raid',
+    name: lng('TEMPLE_OF_AHNQIRAJ'),
+    description: '',
+    level: '30 (40 ' + lng('PLAYER') + ')'
+});
+
+instances.push({
+    coords: [59.84, 31.19],
+    zone: 4080,
+    type: 'dungeon',
+    name: lng('MAGISTERS_TERRACE'),
+    description: '',
+    level: '25-30',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+
+instances.push({
+    coords: [46.87, 71.92],
+    zone: 41,
+    type: 'raid',
+    name: lng('KARAZHAN'),
+    description: '',
+    level: '30, 45<span class="tooltip-heroic-icon"></span> (10 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [44.07, 45.27],
+    zone: 4080,
+    type: 'raid',
+    name: lng('SUNWELL_PLATEAU'),
+    description: '',
+    level: '30 (25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [64.8, 47.9],
+    zone: 440,
+    type: 'dungeon',
+    name: lng('OLD_HILLSBRAD_FOOTHILLS'),
+    description: '',
+    level: '15-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [64.8, 47.9],
+    zone: 440,
+    type: 'dungeon',
+    name: lng('THE_BLACK_MORASS'),
+    description: '',
+    level: '25-30',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+
+instances.push({
+    coords: [64.8, 47.9],
+    zone: 440,
+    type: 'raid',
+    name: lng('HYJAL_SUMMIT'),
+    description: '',
+    level: '30 (25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [58.25, 46.44],
+    zone: 495,
+    type: 'dungeon',
+    name: lng('UTGARDE_KEEP'),
+    description: '',
+    level: '10-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+instances.push({
+    coords: [27.17, 28.13],
+    zone: 3537,
+    type: 'dungeon',
+    name: lng('THE_NEXUS'),
+    description: '',
+    level: '10-30',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [25.26, 47.58],
+    zone: 65,
+    type: 'dungeon',
+    name: lng('AZJOL_NERUB'),
+    description: '',
+    level: '15-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+instances.push({
+    coords: [26.73, 49.00],
+    zone: 65,
+    type: 'dungeon',
+    name: lng('AHNKAHET_THE_OLD_KINGDOM'),
+    description: '',
+    level: '15-30',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+instances.push({
+    coords: [16.97, 22.36],
+    zone: 394,
+    type: 'dungeon',
+    name: lng('DRAKTHARON_KEEP'),
+    description: '',
+    level: '15-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+instances.push({
+    coords: [56.58, 47.43],
+    zone: 4395,
+    type: 'dungeon',
+    name: lng('VIOLET_HOLD'),
+    description: '',
+    level: '15-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [76.17, 20.82],
+    zone: 66,
+    type: 'dungeon',
+    name: lng('GUNDRAK'),
+    description: '',
+    level: '20-30',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [38.20, 26.80],
+    zone: 67,
+    type: 'dungeon',
+    name: lng('HALLS_OF_STONE'),
+    description: '',
+    level: '20-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+instances.push({
+    coords: [45.24, 19.59],
+    zone: 67,
+    type: 'dungeon',
+    name: lng('HALLS_OF_LIGHTNING'),
+    description: '',
+    level: '20-30',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [27.17, 28.13],
+    zone: 3537,
+    type: 'dungeon',
+    name: lng('OCULUS'),
+    description: '',
+    level: '20-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [58.25, 46.44],
+    zone: 495,
+    type: 'dungeon',
+    name: lng('UTGARDE_PINNACLE'),
+    description: '',
+    level: '20-30',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+instances.push({
+    coords: [64.8, 47.9],
+    zone: 440,
+    type: 'dungeon',
+    name: lng('THE_CULLING_OF_STRATHOLME'),
+    description: '',
+    level: '20-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [75.07, 21.02],
+    zone: 210,
+    type: 'dungeon',
+    name: lng('TRIAL_OF_THE_CHAMPION'),
+    description: '',
+    level: '25-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+instances.push({
+    coords: [52.5, 89.4],
+    zone: 210,
+    type: 'dungeon',
+    name: lng('FORGE_OF_SOULS'),
+    description: '',
+    level: '25-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+instances.push({
+    coords: [52.5, 89.4],
+    zone: 210,
+    type: 'dungeon',
+    name: lng('PIT_OF_SARON'),
+    description: '',
+    level: '25-30',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+instances.push({
+    coords: [52.5, 89.4],
+    zone: 210,
+    type: 'dungeon',
+    name: lng('HALLS_OF_REFLECTION'),
+    description: '',
+    level: '25-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [88.28, 45.46],
+    zone: 65,
+    type: 'raid',
+    name: lng('NAXXRAMAS'),
+    description: '',
+    level: '30 (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [60.20, 56.32],
+    zone: 65,
+    type: 'raid',
+    name: lng('OBSIDIAN_SANCTUM'),
+    description: '',
+    level: '30 (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [49.63, 24.66],
+    zone: 4197,
+    type: 'raid',
+    name: lng('VAULT_OF_ARCHAVON'),
+    description: '',
+    level: '30 (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [27.17, 28.13],
+    zone: 3537,
+    type: 'raid',
+    name: lng('EYE_OF_ETERNITY'),
+    description: '',
+    level: '30 (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [41.42, 16.36],
+    zone: 67,
+    type: 'raid',
+    name: lng('ULDUAR'),
+    description: '',
+    level: '30 (10/30 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+instances.push({
+    coords: [75.20, 22.16],
+    zone: 210,
+    type: 'raid',
+    name: lng('TRIAL_OF_THE_CRUSADER'),
+    description: '',
+    level: '30,<span class="tooltip-heroic-icon"></span> (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [52.5, 76.5],
+    zone: 15,
+    type: 'raid',
+    name: lng('ONYXIAS_LAIR'),
+    description: '',
+    level: '30 (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [54.03, 85.12],
+    zone: 210,
+    type: 'raid',
+    name: lng('ICECROWN_CITADEL'),
+    description: '',
+    level: '30,<span class="tooltip-heroic-icon"></span> (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [60.20, 56.32],
+    zone: 65,
+    type: 'raid',
+    name: lng('RUBY_SANCTUM'),
+    description: '',
+    level: '30,<span class="tooltip-heroic-icon"></span> (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-wotlk-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [70.66, 29.47],
+    zone: 5145,
+    type: 'dungeon',
+    name: lng('THRONE_OF_THE_TIDES'),
+    description: '',
+    level: '30-35',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [21.02, 35.66],
+    zone: 46,
+    type: 'dungeon',
+    name: lng('BLACKROCK_CAVERNS'),
+    description: '',
+    level: '30-35 (35<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [49.85, 47.59],
+    zone: 5416,
+    type: 'dungeon',
+    name: lng('STONECORE'),
+    description: '',
+    level: '30-35',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [75.89, 82.41],
+    zone: 5034,
+    type: 'dungeon',
+    name: lng('VORTEX_PINNACLE'),
+    description: '',
+    level: '30-35',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+instances.push({
+    coords: [20.11, 54.01],
+    zone: 4922,
+    type: 'dungeon',
+    name: lng('GRIM_BATOL'),
+    description: '',
+    level: '30-35',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [72.54, 51.60],
+    zone: 5034,
+    type: 'dungeon',
+    name: lng('HALLS_OF_ORIGINATION'),
+    description: '',
+    level: '30-35 (35<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [62.16, 68.13],
+    zone: 5034,
+    type: 'dungeon',
+    name: lng('LOST_CITY_OF_THE_TOLVIR'),
+    description: '',
+    level: '30-35',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [82.90, 63.58],
+    zone: 3433,
+    type: 'dungeon',
+    name: lng('ZULAMAN'),
+    description: '',
+    level: '35<span class="tooltip-heroic-icon"></span>',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [67.68, 32.64],
+    zone: 33,
+    type: 'dungeon',
+    name: lng('ZULGURUB'),
+    description: '',
+    level: '35<span class="tooltip-heroic-icon"></span>',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [64.8, 47.9],
+    zone: 440,
+    type: 'dungeon',
+    name: lng('END_TIME'),
+    description: '',
+    level: '35',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [64.8, 47.9],
+    zone: 440,
+    type: 'dungeon',
+    name: lng('WELL_OF_ETERNITY'),
+    description: '',
+    level: '35<span class="tooltip-heroic-icon"></span>',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+instances.push({
+    coords: [64.8, 47.9],
+    zone: 440,
+    type: 'dungeon',
+    name: lng('HOUR_OF_TWILIGHT'),
+    description: '',
+    level: '35<span class="tooltip-heroic-icon"></span>',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [46.57, 50.49],
+    zone: 5095,
+    type: 'raid',
+    name: lng('BARADIN_HOLD'),
+    description: '',
+    level: '35 (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [32.22, 80.20],
+    zone: 4922,
+    type: 'raid',
+    name: lng('BASTION_OF_TWILIGHT'),
+    description: '',
+    level: '35,<span class="tooltip-heroic-icon"></span> (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [36.52, 80.07],
+    zone: 5034,
+    type: 'raid',
+    name: lng('THRONE_OF_THE_FOUR_WINDS'),
+    description: '',
+    level: '35,<span class="tooltip-heroic-icon"></span> (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [21.02, 35.66],
+    zone: 46,
+    type: 'raid',
+    name: lng('BLACKWING_DESCENT'),
+    description: '',
+    level: '35,<span class="tooltip-heroic-icon"></span> (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [47.49, 80.60],
+    zone: 616,
+    type: 'raid',
+    name: lng('FIRELANDS'),
+    description: '',
+    level: '35 (10/30 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+instances.push({
+    coords: [64.8, 47.9],
+    zone: 440,
+    type: 'raid',
+    name: lng('DRAGON_SOUL'),
+    description: '',
+    level: '35,<span class="tooltip-heroic-icon"></span> (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-cata-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [36.43, 69.22],
+    zone: 5805,
+    type: 'dungeon',
+    name: lng('STORMSTOUT_BREWERY'),
+    description: '',
+    level: '15-35',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+instances.push({
+    coords: [55.78, 58.89],
+    zone: 5785,
+    type: 'dungeon',
+    name: lng('TEMPLE_OF_THE_JADE_SERPENT'),
+    description: '',
+    level: '10-35',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [79.52, 34.45],
+    zone: 5840,
+    type: 'dungeon',
+    name: lng('MOGUSHAN_PALACE'),
+    description: '',
+    level: '20-35',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [36.90, 48.03],
+    zone: 5841,
+    type: 'dungeon',
+    name: lng('SHADO_PAN_MONASTERY'),
+    description: '',
+    level: '20-35',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [3.96, 61.44],
+    zone: 5840,
+    type: 'dungeon',
+    name: lng('GATE_OF_THE_SETTING_SUN'),
+    description: '',
+    level: '20-35',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [34.32, 81.69],
+    zone: 5842,
+    type: 'dungeon',
+    name: lng('SIEGE_OF_NIUZAO_TEMPLE'),
+    description: '',
+    level: '25-35',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [59.56, 40.01],
+    zone: 5841,
+    type: 'raid',
+    name: lng('MOGUSHAN_VAULTS'),
+    description: '',
+    level: '35,<span class="tooltip-heroic-icon"></span> (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [37.73, 36.17],
+    zone: 6138,
+    type: 'raid',
+    name: lng('HEART_OF_FEAR'),
+    description: '',
+    level: '35,<span class="tooltip-heroic-icon"></span> (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [46.83, 64.98],
+    zone: 6006,
+    type: 'raid',
+    name: lng('TERRACE_OF_ENDLESS_SPRING'),
+    description: '',
+    level: '35,<span class="tooltip-heroic-icon"></span> (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [64.47, 31.09],
+    zone: 6507,
+    type: 'raid',
+    name: lng('THRONE_OF_THUNDER'),
+    description: '',
+    level: '35,<span class="tooltip-heroic-icon"></span> (10/25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [73.67, 42.16],
+    zone: 5840,
+    type: 'raid',
+    name: lng('SIEGE_OF_ORGRIMMAR'),
+    description: '',
+    level: '35,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-mop-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [21.02, 35.66],
+    zone: 46,
+    type: 'dungeon',
+    name: lng('UPPER_BLACKROCK_SPIRE'),
+    description: '',
+    level: '35-40 (40<span class="tooltip-heroic-icon"></span>, 40<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-warlords-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [61.85, 40.79],
+    zone: 7334,
+    type: 'dungeon',
+    name: lng('EYE_OF_AZSHARA'),
+    description: '',
+    level: '10-45 (45<span class="tooltip-heroic-icon"></span>, 45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [59.25, 32.08],
+    zone: 7558,
+    type: 'dungeon',
+    name: lng('DARKHEART_THICKET'),
+    description: '',
+    level: '10-45 (45<span class="tooltip-heroic-icon"></span>, 45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+instances.push({
+    coords: [48.71, 68.21],
+    zone: 7503,
+    type: 'dungeon',
+    name: lng('NELTHARIONS_LAIR'),
+    description: '',
+    level: '10-45 (45<span class="tooltip-heroic-icon"></span>, 45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+instances.push({
+    coords: [65.08, 55.32],
+    zone: 7502,
+    type: 'dungeon',
+    name: lng('ASSAULT_ON_VIOLET_HOLD'),
+    description: '',
+    level: '10-45 (45<span class="tooltip-heroic-icon"></span>, 45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [48.13, 82.27],
+    zone: 7334,
+    type: 'dungeon',
+    name: lng('VAULT_OF_THE_WARDENS'),
+    description: '',
+    level: '10-45 (45<span class="tooltip-heroic-icon"></span>, 45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+
+
+
+instances.push({
+    coords: [72.58, 67.60],
+    zone: 7541,
+    type: 'dungeon',
+    name: lng('HALLS_OF_VALOR'),
+    description: '',
+    level: '10-45 (45<span class="tooltip-heroic-icon"></span>, 45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [52.88, 45.29],
+    zone: 7541,
+    type: 'dungeon',
+    name: lng('MAW_OF_SOULS'),
+    description: '',
+    level: '10-45 (45<span class="tooltip-heroic-icon"></span>, 45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [46.87, 71.92],
+    zone: 41,
+    type: 'dungeon',
+    name: lng('RETURN_TO_KARAZHAN'),
+    description: '',
+    level: '45 (45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [70.94, 69.73],
+    zone: 7541,
+    type: 'raid',
+    name: lng('TRIAL_OF_VALOR'),
+    description: '',
+    level: '45,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+//
+
+instances.push({
+    coords: [41.04, 61.38],
+    zone: 7637,
+    type: 'dungeon',
+    name: lng('THE_ARCWAY'),
+    description: '',
+    level: '45 (45<span class="tooltip-heroic-icon"></span>, 45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [51.16, 66.75],
+    zone: 7637,
+    type: 'dungeon',
+    name: lng('COURT_OF_STARS'),
+    description: '',
+    level: '45 (45<span class="tooltip-heroic-icon"></span>, 45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [43.51, 57.29],
+    zone: 7637,
+    type: 'raid',
+    name: lng('THE_NIGHTHOLD'),
+    description: '',
+    level: '45,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [64.86, 16.50],
+    zone: 7543,
+    type: 'dungeon',
+    name: lng('CATHEDRAL_OF_ETERNAL_NIGHT'),
+    description: '',
+    level: '45 (45<span class="tooltip-heroic-icon"></span>, 45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+instances.push({
+    coords: [63.97, 21.00],
+    zone: 7543,
+    type: 'raid',
+    name: lng('TOMB_OF_SARGERAS'),
+    description: '',
+    level: '45,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [56.11, 37.97],
+    zone: 7558,
+    type: 'raid',
+    name: lng('THE_EMERALD_NIGHTMARE'),
+    description: '',
+    level: '45,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [38.09, 49.65],
+    zone: 7558,
+    type: 'dungeon',
+    name: lng('BLACK_ROOK_HOLD'),
+    description: '',
+    level: '10-45 (45<span class="tooltip-heroic-icon"></span>, 45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [84.13, 78.10],
+    zone: 8567,
+    type: 'dungeon',
+    name: lng('FREEHOLD'),
+    description: '',
+    level: '16-50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [74.97, 24.19],
+    zone: 8567,
+    type: 'dungeon',
+    name: lng('SIEGE_OF_BORALUS_ALLIANCE'),
+    description: '',
+    level: '50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [86.93, 51.98],
+    zone: 8567,
+    type: 'dungeon',
+    name: lng('SIEGE_OF_BORALUS_HORDE'),
+    description: '',
+    level: '50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [79.19, 59.09],
+    zone: 9237,
+    type: 'dungeon',
+    name: lng('TOL_DAGOR'),
+    description: '',
+    level: '30-50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+instances.push({
+    coords: [33.46, 11.77],
+    zone: 8721,
+    type: 'dungeon',
+    name: lng('WAYCREST_MANOR'),
+    description: '',
+    level: '25-50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [78.07, 24.09],
+    zone: 9042,
+    type: 'dungeon',
+    name: lng('SHRINE_OF_THE_STORM'),
+    description: '',
+    level: '35-50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [41.32, 39.61],
+    zone: 8499,
+    type: 'dungeon',
+    name: lng('ATALDAZAR'),
+    description: '',
+    level: '16-50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [37.22, 37.76],
+    zone: 8499,
+    type: 'dungeon',
+    name: lng('KINGS_REST'),
+    description: '',
+    level: '50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+instances.push({
+    coords: [52.41, 24.81],
+    zone: 8501,
+    type: 'dungeon',
+    name: lng('TEMPLE_OF_SETHRALISS'),
+    description: '',
+    level: '35-50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+instances.push({
+    coords: [51.07, 63.00],
+    zone: 8500,
+    type: 'dungeon',
+    name: lng('UNDERROT'),
+    description: '',
+    level: '25-50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [53.46, 63.62],
+    zone: 8500,
+    type: 'raid',
+    name: lng('ULDIR'),
+    description: '',
+    level: '50,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [38.97, 72.61],
+    zone: 8499,
+    type: 'dungeon',
+    name: lng('THE_MOTHERLODE_ALLIANCE'),
+    description: '',
+    level: '30-50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+instances.push({
+    coords: [55.61, 57.72],
+    zone: 8499,
+    type: 'dungeon',
+    name: lng('THE_MOTHERLODE_HORDE'),
+    description: '',
+    level: '30-50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [48.12, 38.73],
+    zone: 8701,
+    type: 'dungeon',
+    name: lng('SEAT_OF_THE_TRIUMVIRATE'),
+    description: '',
+    level: '45 (45<span class="tooltip-heroic-icon"></span>, 45<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+instances.push({
+    coords: [30.97, 44.93],
+    zone: 8899,
+    type: 'raid',
+    name: lng('ANTORUS_THE_BURNING_THRONE'),
+    description: '',
+    level: '45,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-legion-right icon"></span>'
+});
+
+
+
+
+instances.push({
+    coords: [47.97, 52.87],
+    zone: 3483,
+    type: 'dungeon',
+    name: lng('HELLFIRE_RAMPARTS'),
+    description: '',
+    level: '10-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [47.97, 52.87],
+    zone: 3483,
+    type: 'dungeon',
+    name: lng('BLOOD_FURNACE'),
+    description: '',
+    level: '10-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+
+instances.push({
+    coords: [50.34, 40.99],
+    zone: 3521,
+    type: 'dungeon',
+    name: lng('SLAVE_PENS'),
+    description: '',
+    level: '10-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [50.34, 40.99],
+    zone: 3521,
+    type: 'dungeon',
+    name: lng('UNDERBOG'),
+    description: '',
+    level: '10-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [39.14, 62.06],
+    zone: 3519,
+    type: 'dungeon',
+    name: lng('MANA_TOMBS'),
+    description: '',
+    level: '15-30',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [36.90, 65.77],
+    zone: 3519,
+    type: 'dungeon',
+    name: lng('AUCHENAI_CRYPTS'),
+    description: '',
+    level: '15-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [42.25, 65.17],
+    zone: 3519,
+    type: 'dungeon',
+    name: lng('SETHEKK_HALLS'),
+    description: '',
+    level: '10-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [39.86, 68.40],
+    zone: 3519,
+    type: 'dungeon',
+    name: lng('SHADOW_LABYRINTH'),
+    description: '',
+    level: '20-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [47.97, 52.87],
+    zone: 3483,
+    type: 'dungeon',
+    name: lng('SHATTERED_HALLS'),
+    description: '',
+    level: '20-30',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [72.04, 59.18],
+    zone: 3523,
+    type: 'dungeon',
+    name: lng('THE_BOTANICA'),
+    description: '',
+    level: '20-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [82.48, 70.30],
+    zone: 3523,
+    type: 'dungeon',
+    name: lng('THE_MECHANAR'),
+    description: '',
+    level: '20-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [50.34, 40.99],
+    zone: 3521,
+    type: 'dungeon',
+    name: lng('THE_STEAMVAULT'),
+    description: '',
+    level: '20-30 (30<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [82.32, 59.77],
+    zone: 3523,
+    type: 'dungeon',
+    name: lng('THE_ARCATRAZ'),
+    description: '',
+    level: '25-30',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [68.21, 23.70],
+    zone: 3522,
+    type: 'raid',
+    name: lng('GRUULS_LAIR'),
+    description: '',
+    level: '30 (25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [45.60, 52.87],
+    zone: 3483,
+    type: 'raid',
+    name: lng('MAGTHERIDONS_LAIR'),
+    description: '',
+    level: '30 (25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [50.34, 40.99],
+    zone: 3521,
+    type: 'raid',
+    name: lng('SERPENTSHRINE_CAVERN'),
+    description: '',
+    level: '30 (25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [75.08, 64.56],
+    zone: 3523,
+    type: 'raid',
+    name: lng('TEMPEST_KEEP_THE_EYE'),
+    description: '',
+    level: '30 (25 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+instances.push({
+    coords: [70.92, 45.47],
+    zone: 3520,
+    type: 'raid',
+    name: lng('BLACK_TEMPLE'),
+    description: '',
+    level: '30 (10/30 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-bc-right icon"></span>'
+});
+
+
+
+instances.push({
+    coords: [50.60, 24.90],
+    zone: 6720,
+    type: 'dungeon',
+    name: lng('BLOODMAUL_SLAG_MINES'),
+    description: '',
+    level: '10-40 (40<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-warlords-right icon"></span>'
+});
+instances.push({
+    coords: [45.40, 13.61],
+    zone: 6721,
+    type: 'dungeon',
+    name: lng('IRON_DOCKS'),
+    description: '',
+    level: '15-40 (40<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-warlords-right icon"></span>'
+});
+instances.push({
+    coords: [44.66, 75.02],
+    zone: 6662,
+    type: 'dungeon',
+    name: lng('AUCHINDOUN'),
+    description: '',
+    level: '20-40 (40<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-warlords-right icon"></span>'
+});
+instances.push({
+    coords: [35.84, 35.66],
+    zone: 6722,
+    type: 'dungeon',
+    name: lng('SKYREACH'),
+    description: '',
+    level: '30-40 (40<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-warlords-right icon"></span>'
+});
+instances.push({
+    coords: [54.92, 30.70],
+    zone: 6721,
+    type: 'dungeon',
+    name: lng('GRIMRAIL_DEPOT'),
+    description: '',
+    level: '35-40 (40<span class="tooltip-heroic-icon"></span>, 40<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-warlords-right icon"></span>'
+});
+instances.push({
+    coords: [32.09, 42.41],
+    zone: 6719,
+    type: 'dungeon',
+    name: lng('SHADOWMOON_BURIAL_GROUNDS'),
+    description: '',
+    level: '15-40 (40<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-warlords-right icon"></span>'
+});
+instances.push({
+    coords: [60.98, 48.11],
+    zone: 6721,
+    type: 'dungeon',
+    name: lng('THE_EVERBLOOM'),
+    description: '',
+    level: '35-40 (40<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-warlords-right icon"></span>'
+});
+
+instances.push({
+    coords: [33.23, 39.81],
+    zone: 6755,
+    type: 'raid',
+    name: lng('HIGHMAUL'),
+    description: '',
+    level: '40,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-warlords-right icon"></span>'
+});
+instances.push({
+    coords: [53.35, 30.38],
+    zone: 6721,
+    type: 'raid',
+    name: lng('BLACKROCK_FOUNDRY'),
+    description: '',
+    level: '40,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-warlords-right icon"></span>'
+});
+
+instances.push({
+    coords: [45.96, 53.41],
+    zone: 6723,
+    type: 'raid',
+    name: lng('HELLFIRE_CITADEL'),
+    description: '',
+    level: '40,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-warlords-right icon"></span>'
+});
+
+
+
+instances.push({
+    coords: [68.22, 44.88],
+    zone: 10290,
+    type: 'dungeon',
+    name: lng('OPERATION_MECHAGON'),
+    description: '',
+    level: '50 (50<span class="tooltip-heroic-icon"></span>, 50<span class="tooltip-mythic-icon"></span>)',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [50.45, 9.83],
+    zone: 10052,
+    type: 'raid',
+    name: lng('AZSHARAS_ETERNAL_PALACE'),
+    description: '',
+    level: '50,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+
+instances.push({
+    coords: [70.34, 35.77],
+    zone: 8568,
+    type: 'raid',
+    name: lng('BATTLE_OF_DAZARALOR_ALLIANCE'),
+    description: '',
+    level: '50,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [38.91, 1.40],
+    zone: 8670,
+    type: 'raid',
+    name: lng('BATTLE_OF_DAZARALOR_HORDE'),
+    description: '',
+    level: '50,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-bfa-right icon"></span>'
+});
+
+
+
+
+
+
+instances.push({
+    coords: [40.33, 55.23],
+    zone: 10534,
+    type: 'dungeon',
+    name: lng('THE_NECROTIC_WAKE'),
+    description: '',
+    level: '51 (60<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-shadowlands-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [59.30, 64.84],
+    zone: 11462,
+    type: 'dungeon',
+    name: lng('PLAGUEFALL'),
+    description: '',
+    level: '53 (60<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-shadowlands-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [35.71, 54.21],
+    zone: 11510,
+    type: 'dungeon',
+    name: lng('MISTS_OF_TIRNA_SCITHE'),
+    description: '',
+    level: '54 (60<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-shadowlands-right icon"></span>'
+});
+
+instances.push({
+    coords: [77.96, 48.52],
+    zone: 10413,
+    type: 'dungeon',
+    name: lng('HALLS_OF_ATONEMENT'),
+    description: '',
+    level: '57 (60<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-shadowlands-right icon"></span>'
+});
+
+
+
+instances.push({
+    coords: [51.09,30.07],
+    zone: 10413,
+    type: 'dungeon',
+    name: lng('SANGUINE_DEPTHS'),
+    description: '',
+    level: '60 (60<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-shadowlands-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [45.76, 41.49],
+    zone: 10413,
+    type: 'raid',
+    name: lng('CASTLE_NATHRIA'),
+    description: '',
+    level: '60,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-shadowlands-right icon"></span>'
+});
+
+
+
+
+
+instances.push({
+    coords: [51.09,30.07],
+    zone: 10534,
+    type: 'dungeon',
+    name: lng('SPIRES_OF_ASCENSION'),
+    description: '',
+    level: '60 (60<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-shadowlands-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [51.09,30.07],
+    zone: 11462,
+    type: 'dungeon',
+    name: lng('THEATER_OF_PAIN'),
+    description: '',
+    level: '60 (60<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-shadowlands-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [51.09,30.07],
+    zone: 11510,
+    type: 'dungeon',
+    name: lng('DE_OTHER_SIDE'),
+    description: '',
+    level: '60 (60<span class="tooltip-heroic-icon"></span>)',
+    requires: '<span class="icon-shadowlands-right icon"></span>'
+});
+
+
+instances.push({
+    coords: [46.4, 38.9],
+    zone: 11400,
+    type: 'torghast',
+    name: lng('TORGHAST_ENTRANCE'),
+    description: '',
+    level: '60',
+    requires: '<span class="icon-shadowlands-right icon"></span>'
+});
+
+instances.push({
+    coords: [80.6, 53.4],
+    zone: 13536,
+    type: 'raid',
+    name: lng('SEPULCHER_OF_THE_FIRST_ONES'),
+    description: '',
+    level: '60,<span class="tooltip-heroic-icon"></span> (10/30 ' + lng('PLAYER') + '),<span class="tooltip-mythic-icon"></span> (20 ' + lng('PLAYER') + ')',
+    requires: '<span class="icon-shadowlands-right icon"></span>'
+});
+
+//

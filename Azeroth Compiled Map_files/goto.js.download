@@ -1,0 +1,25 @@
+function goTo() {
+    var goto = getHashValue('goto');
+    if(typeof goto !='undefined' && zonecoords.hasOwnProperty(goto)) {
+        var object = zonecoords[goto];
+        if (object.map === _map) {
+            var positionTopLeft = new L.latLng(object.coords[0]);
+            var positionBottomRight = new L.latLng(object.coords[1]);
+            var gotoCenter = getCenterPoint(positionTopLeft,positionBottomRight);
+            var gotoZoom = map.getBoundsZoom(object.coords);
+            map.setView(gotoCenter, gotoZoom);
+            var url = new URL(window.location);
+            url.hash = '';
+            history.replaceState(null, document.title, url);
+        }
+    }
+}
+
+if (location.hash) {
+    goTo();
+}
+
+window.addEventListener('hashchange', function(event)
+{
+    goTo();
+});

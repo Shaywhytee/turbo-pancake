@@ -1,0 +1,42 @@
+/*wowhead reset*/
+
+a.button.fa::before, span.button.fa::before, .button a.fa::before, button.fa::before, input[type="submit"].fa::before, input[type="button"].fa::before, .btn.fa::before, .gdpr-module button.fa#OptIn::before, a.button .fa::before, span.button .fa::before, .button a .fa::before, button .fa::before, input[type="submit"] .fa::before, input[type="button"] .fa::before, .btn .fa::before, .gdpr-module button#OptIn .fa::before {
+    color: inherit !important;
+}
+
+a.button, span.button, .button a, button, input[type="submit"], input[type="button"], .btn, .gdpr-module button#OptIn {
+    color: inherit;
+    cursor: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    text-align: inherit;
+    text-shadow: inherit;
+    white-space: inherit;
+
+    background: inherit;
+    background-color: inherit;
+    background-position-x: inherit;
+    background-position-y: inherit;
+    background-repeat: inherit;
+    border: inherit;
+    border-radius: 0;
+    color: inherit;
+    cursor: inherit;
+    display: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin-bottom: inherit;
+    outline: inherit;
+    padding: inherit;
+    text-align: inherit;
+    text-shadow: inherit;
+    -webkit-user-select: inherit;
+    -moz-user-select: inherit;
+    -ms-user-select: inherit;
+    -o-user-select: inherit;
+    user-select: inherit;
+    vertical-align: inherit;
+    white-space: inherit;
+}

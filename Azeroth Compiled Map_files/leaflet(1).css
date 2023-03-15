@@ -1,0 +1,30 @@
+﻿.leaflet-popup {
+    left: 0 !important;
+    bottom: -11px !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    display: none;
+}
+.leaflet-popup-tip-container {
+    display: none;
+}
+.leaflet-popup-content {
+    margin: 0;
+    line-height: normal;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.leaflet-popup-content .wowhead-tooltip {
+    visibility: visible !important;
+}
+
+
+.easy-button-button .button-state .pressed {
+    opacity: 0.5;
+
+}

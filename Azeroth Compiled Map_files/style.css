@@ -1,0 +1,57 @@
+.dungeon_b {
+    background: url('images/button.png') no-repeat 50% 50%;
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+
+.instances_multiply_marker {
+    background: url('images/instances_multiply.png') no-repeat 50% 50%;
+    height: 24px;
+    width: 24px;
+}
+
+.wowhead-tooltip b span.icon::after {
+    margin-top: 5px;
+}
+
+.wowhead-tooltip b span.icon_left::after {
+    margin-top: 2px;
+    height: 18px;
+    width: 18px;
+    content: ' ';
+    display: inline-block;
+    vertical-align: top;
+    background-size: 18px 18px;
+}
+
+.wowhead-tooltip td {
+    max-width: inherit; /* 500 px default*/
+}
+
+.wowhead-tooltip b span.icon_left.icon_raid::after {
+    background-image: url(images/instances_raid.png);
+}
+
+.wowhead-tooltip b span.icon_left.icon_dungeon::after {
+    background-image: url(images/instances_dungeon.png);
+}
+
+.wowhead-tooltip b span.icon_left.icon_torghast::after {
+    background-image: url(images/instances_togrhast.png);
+}
+
+
+
+
+
+.tooltip-mythic-icon {
+    padding-left: 13px;
+    margin-left: 2px;
+    background: url(//wow.zamimg.com/images/icons/mythic.gif) left center no-repeat;
+    background-size: auto;
+    background-size: 14px 17px;
+    vertical-align: middle;
+
+}

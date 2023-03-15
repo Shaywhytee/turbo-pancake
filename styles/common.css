@@ -1,0 +1,139 @@
+/* Common Style */
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3, h4 {
+font-family: 'Roboto Slab', serif;
+}
+.map {
+
+}
+
+/* Skewed Header */
+.skewed header {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+.skewed-header > .header-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: skewY(-6deg);
+    transform-origin: top left;
+    filter: brightness(50%);
+}
+.skewed-header > .skewed-header-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.skewed-header > .skewed-header-wrapper > .skewed-header-content {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .heading-wrapper {
+    background-color: black;
+    color: yellowgreen;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: px;
+    width: 175px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+/* Page Container Style */
+.page-container {
+    display: flex;
+    justify-content: center;
+}
+.page-container > .content-wrapper {
+    width: 1000px;
+    margin-top: 375px;
+
+}
+.page-container > .content-wrapper > #Illidan {
+    width: 350px;
+    margin: 23px 40px 20px 0px;
+    float: left;
+    border: 1px black;
+}
+.page-container > .content-wrapper p {
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+/* Square Grid Style */
+.squares-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.squares-wrapper > .squares {
+    width: 1000px;
+}
+
+.squares-wrapper > .squares > .square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -4px;
+}
+
+.square > .image-wrapper img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: -4px
+}
+
+.square > .square-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 42px;
+}
+.square > .square-text-wrapper h1 {
+    color: #6a8711;
+}
+/* 
+.page-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 300px;
+    background-color: black;
+    margin: 100px 0px;
+    padding: 100px 0px;
+}
+.page-container > .contact-form-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: %;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+/* .page-container > .contact-form-wrapper > .contact-form-content {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; */
+
+
+}

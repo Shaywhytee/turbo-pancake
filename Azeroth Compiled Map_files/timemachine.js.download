@@ -1,0 +1,77 @@
+if (_map===1) {
+
+
+    var timeMachineArraySettings = {opacity: 1, interactive: false};
+    var timeMachineBFAArray = [
+        L.imageOverlay('/leaflet/plugins/timemachine/images/' + _language + '/darnassus.jpg', [[79.42027, -152.41333],[77.28111, -141.53687]],timeMachineArraySettings),
+        L.imageOverlay('/leaflet/plugins/timemachine/images/' + _language + '/tirisfal.jpg', [[76.55901, 22.14843],[75.40746, 27.39990]],timeMachineArraySettings),
+        L.imageOverlay('/leaflet/plugins/timemachine/images/' + _language + '/arathi.jpg', [[74.31179, 29.34449],[72.90186, 37.16675]]	,timeMachineArraySettings),
+        L.imageOverlay('/leaflet/plugins/timemachine/images/' + _language + '/silithus.jpg', [[66.75725, -150.90820],[64.01923, -141.39404]]	,timeMachineArraySettings),
+    ];
+
+    var timeMachineDeepholmArray = [
+        L.imageOverlay('/leaflet/plugins/timemachine/images/' + _language + '/deepholm.jpg', [[76.18762, -92.95532],[72.48520, -79.17847]]	,timeMachineArraySettings),
+    ];
+//
+    var toggleTimeMachineBFA = L.easyButton({
+        id: 'timemachine-button',
+        states: [{
+            stateName: 'show-timemachine',
+            icon: 'fa-clock',
+            title: lng('SHOW_TIMEMACHINE'),
+            onClick: function(callback) {
+                timeMachineBFAArray.forEach(function(object,index) {
+                    object.addTo(map);
+                });
+                callback.state('hide-timemachine');
+            }
+        }, {
+            icon: 'fa-clock pressed',
+            stateName: 'hide-timemachine',
+            title: lng('HIDE_TIMEMACHINE'),
+            onClick: function(callback) {
+                timeMachineBFAArray.forEach(function(object,index) {
+                    map.removeLayer(object);
+                });
+                callback.state('show-timemachine');
+            }
+
+        }]
+    });
+
+    var toggleTimeMachineDeepholm = L.easyButton({
+        id: 'timemachine-button',
+        states: [{
+            stateName: 'show-deepholm',
+            icon: 'fa fa-angle-double-down',
+            title: lng('SHOW_DEEPHOLM'),
+            onClick: function(callback) {
+                timeMachineDeepholmArray.forEach(function(object,index) {
+                    object.addTo(map);
+                });
+                callback.state('hide-deepholm');
+            }
+        }, {
+            icon: 'fa fa-angle-double-down pressed',
+            stateName: 'hide-deepholm',
+            title: lng('HIDE_DEEPHOLM'),
+            onClick: function(callback) {
+                timeMachineDeepholmArray.forEach(function(object,index) {
+                    map.removeLayer(object);
+                });
+                callback.state('show-deepholm');
+            }
+
+        }]
+    });
+
+
+
+    var toggleTimeMachineButtons = [
+        toggleTimeMachineBFA,toggleTimeMachineDeepholm
+        ]
+    ;
+
+    L.easyBar(toggleTimeMachineButtons,{position:'topleft'}).addTo(map);
+
+}

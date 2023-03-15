@@ -1,0 +1,61 @@
+if (_map===1) {
+
+    var wainderingIsleSettings = {opacity: 1, interactive: false};
+
+
+    var wainderingIsleOverlay = [[58.54044, -42.61871],[53.15814, -30.58594]];
+    //var wainderingIsleZone = [[62.99516, -41.52832],[45.92059, 7.07520]];
+
+    var wainderingIsleZone_Array = [];
+    wainderingIsleZone_Array.push([[62.83509, -42.80273],[39.57182, 13.44727]]);
+    wainderingIsleZone_Array.push([[57.51582, -42.89063],[39.50404, 58.53516]]);
+    wainderingIsleZone_Array.push([[66.46066, -12.12891],[39.50404, 13.71094]]);
+    wainderingIsleZone_Array.push([[66.46066, -12.12891],[39.50404, 13.71094]]);
+
+    var wainderingIsleZone = wainderingIsleZone_Array[Math.floor((Math.random()*wainderingIsleZone_Array.length))];
+
+
+    //picture
+    var _wslatlng_bottomleft = L.latLng(wainderingIsleOverlay[0]);
+    var _wslatlng_topright = L.latLng(wainderingIsleOverlay[1]);
+    var _ws_bottomleft = L.Projection.Mercator.project(_wslatlng_bottomleft);
+    var _ws_topright = L.Projection.Mercator.project(_wslatlng_topright);
+
+    var _ws_x = Math.abs(_ws_topright.x - _ws_bottomleft.x);
+    var _ws_y = Math.abs(_ws_topright.y - _ws_bottomleft.y);
+
+
+    //zone
+    var _ws_latlng_zone_bottomleft = L.latLng(wainderingIsleZone[0]);
+    var _ws_latlng_zone_topright = L.latLng(wainderingIsleZone[1]);
+    var _ws_zone_bottomleft = L.Projection.Mercator.project(_ws_latlng_zone_bottomleft);
+    var _ws_zone_topright = L.Projection.Mercator.project(_ws_latlng_zone_topright);
+
+
+    //picture inside zone
+    _ws_zone_topright.x = _ws_zone_topright.x - _ws_x;
+    _ws_zone_bottomleft.y = _ws_zone_bottomleft.y - _ws_y;
+
+
+
+    //newcoords
+
+    var _ws_new_bottomleft = {};
+    _ws_new_bottomleft.x = Math.random() * (_ws_zone_bottomleft.x - _ws_zone_topright.x) + _ws_zone_topright.x;
+    _ws_new_bottomleft.y = Math.random() * (_ws_zone_bottomleft.y - _ws_zone_topright.y) + _ws_zone_topright.y;
+
+    var _ws_r_bottomleft = L.Projection.Mercator.unproject(_ws_new_bottomleft);
+    var _ws_new_topright = {};
+
+    _ws_new_topright.x = _ws_new_bottomleft.x + _ws_x;
+    _ws_new_topright.y = _ws_new_bottomleft.y + _ws_y;
+
+    var _ws_r_topright = L.Projection.Mercator.unproject(_ws_new_topright);
+
+    L.imageOverlay('/leaflet/plugins/wandering_isle/images/' + _language + '/map.png', [_ws_r_bottomleft,_ws_r_topright],wainderingIsleSettings).addTo(map);
+
+    //L.rectangle(wainderingIsleZone, {color: '#'+(~~(Math.random()*(1<<24))).toString(16), weight: 1}).addTo(map);
+    //L.marker(_ws_r_bottomleft, {icon: pin, draggable: false}).addTo(map);
+    //L.marker(_ws_r_topright, {icon: pin, draggable: false}).addTo(map);
+
+}
